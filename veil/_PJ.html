@@ -1,0 +1,162 @@
+<form class="{{cssClass}}" autocomplete="off" id="sheet">
+    {{!-- Sheet Header --}}
+    <header class="sheet-header">
+        <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100">
+        <div class="header-fields">
+            <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"></h1>
+            <div class="flexblock-left ">
+                <div class="col-1-2">
+                    {{#if actor.data.istemplate}}
+                    {{else}}
+                    <div class="flexblock-left">
+                        <label class="label-free boldtext">MOD</label>
+                        <input class="input-min" type="text" name="data.mod" value="{{data.mod}}">
+
+                        {{#advShow}}
+                        <a class="roll-mode boldtext" title="Roll mode"><i>{{data.rollmode}}</i></a>
+                        {{/advShow}}
+
+                        {{#showRoller}}
+                        <a class="roll-free" title="Roll mode"><i class="fas fa-dice-d20"></i></a>
+                        {{/showRoller}}
+
+                        {{#if actor.data.selector}}
+                        <a class="mod-selector" title="Select Options"><i class="fas fa-exclamation-circle fa-2x"></i></a>
+                        {{/if}}
+                    </div>
+                    {{/if}}
+                </div>
+
+                <div class="rightblock">
+                    {{#if actor.data.istemplate}}
+                    {{else}}
+                    {{#isGM}}
+                    <select class="selectsheet" name="data.gtemplate" data-type="String">
+                        <!--
+{{#select actor.data.gtemplate}}
+{{#each data.sheets as |gtemplate id|}}
+<option  value="{{gtemplate}}">{{gtemplate}}</option>
+{{/each}}
+{{/select}}
+-->
+                    </select>
+                    {{/isGM}}
+                    {{/if}}
+                    {{#isGM}}
+
+
+                    <h3 class="rightblock-element">Template</h3>
+                    <input class="check-istemplate" name="data.istemplate" id="check-istemplate" type="checkbox" {{checked actor.data.istemplate}}="">
+
+
+                    {{/isGM}}
+
+                    {{#if actor.data.istemplate}}
+                    <h3 class="rightblock-element-tag">Rebuild Sheet</h3>
+                    <a class="rightblock-element item-refresh" title="Rebuild Sheet"><i class="fas fa-sync"></i></a>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <div class="atabs">
+        <a class="tab-prev" id="tab-prev">❮</a>
+        <nav class="sheet-tabs tabs" data-group="primary" id="tabs" tabs="2">
+
+            <a class="item tab-button" data-tab="description" id="tab-0">Bio</a>          
+            <a class="item tab-button" id="tab-1" data-tab="core_tab">Core</a><a class="item tab-button" id="tab-2" data-tab="net_tab">Net</a><a style="display: none" id="tab-last"></a>
+            {{#isGM}}
+            <a class="item tab-button" data-tab="citems" id="tab-citems">cItems</a>
+            {{#if actor.data.istemplate}}
+            <a class="item tab-button" data-tab="token" id="tab-token">Token</a>
+            <a class="item tab-button" data-tab="config" id="tab-tabs">Tabs</a>
+            {{/if}}
+            {{/isGM}}
+
+        </nav>
+        <a class="tab-next" id="tab-next">❯</a>
+    </div>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body" id="sheet-body">
+
+        {{!-- Biography Tab --}}
+        <div class="tab biography active scrollable" data-group="primary" data-tab="description">
+            {{editor content=data.biography target="data.biography" button=true owner=owner editable=editable}}
+        </div>
+
+        {{#if actor.data.istemplate}}
+        {{!-- SheetTabs Tab --}}
+        <div class="tab properties" data-group="primary" data-tab="config">
+            <ol class="properties-list">
+                {{#each data.tabs as |tab id|}}
+                <li class="property flexrow" data-item-id="{{id}}">
+                    <h4 class="property-name">{{tab.name}}</h4>
+                    <div class="property-row">
+                        <a class="property-controls item-top" title="Top Item"><i class="fas fa-arrow-alt-circle-up"></i></a>
+                        <a class="property-controls item-bottom" title="Bottom Item"><i class="fas fa-arrow-alt-circle-down"></i></a>
+                        <a class="property-control item-edit" title="Edit Tab"><i class="fas fa-edit"></i></a>
+                        <a class="property-control item-delete" title="Delete Tab"><i class="fas fa-trash"></i></a>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+        </div>
+        {{!-- Token Tab --}}
+        <div class="tab token scrollable" data-group="primary" data-tab="token">
+            <div class="flexblock">
+                <div class="col-1-2">
+                    <div class="new-row">
+                        <div class="flexblock-left">
+                            <label class="label-medlarge">Bar 1</label>
+                            <input class="token-bar1" type="text" name="data.tokenbar1" value="{{data.tokenbar1}}" tkvalue="">
+                        </div>
+                    </div>
+                    <div class="new-row">
+                        <div class="flexblock-left">
+                            <label class="label-medlarge">Shield Stat</label>
+                            <input class="token-shieldstat" type="text" name="data.shieldstat" value="{{data.shieldstat}}" tkvalue="">
+                        </div>
+                    </div>
+                    <div class="new-row">
+                        <div class="flexblock-left">
+                            <label class="label-medlarge">Display Name</label>
+                            <select class="token-displayName" name="data.displayName" data-type="String" tkvalue="NONE">
+                                {{#select actor.data.displayName}}
+                                <option value="NONE">NONE</option>
+                                <option value="CONTROL">CONTROL</option>
+                                <option value="OWNER_HOVER">OWNER HOVER</option>
+                                <option value="HOVER">HOVER</option>
+                                <option value="OWNER">OWNER</option>
+                                <option value="ALWAYS">ALWAYS</option>
+                                {{/select}}
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        {{/if}}
+
+        {{!-- cItems Tab --}}
+        <div class="tab citems scrollable" data-group="primary" data-tab="citems">
+            <ol class="properties-list">
+                {{#each data.citems as |citem cid|}}
+                <li class="property flexrow" data-item-id="{{cid}}">
+                    <h4 class="property-name">{{citem.name}}</h4>
+                    <div class="property-row">
+                        <a class="property-control citem-edit" title="Edit cItem"><i class="fas fa-edit"></i></a>
+                        <a class="property-control citem-delete" citemid="{{citem.id}}" title="Delete cItem"><i class="fas fa-trash"></i></a>
+                    </div>
+                </li>
+                {{/each}}
+            </ol>
+        </div>
+
+
+
+    <div class="tab scrollable core_tab_tab" id="core_tab_Def" data-group="primary" data-tab="core_tab"><div class="new-column" id="core_tabBody"><div class="new-block" id="core_tabrow0"><div id="estados_infomulti" class="multi-3-4-col"><div class="new-block" id="estados_infomultirow1"><div class="multi-3-4"><div class="panelheader">INFORMACIÓN</div><div class="new-row"><div class="flexblock-left"><h3 class=" label-med boldtext" id="apariencia" attid="n957JnXEY7qdFWMU">Apariencia</h3><input name="data.attributes.apariencia.value" value="{{data.attributes.apariencia.value}}" type="text" class="input-free apariencia" attid="n957JnXEY7qdFWMU"></div><div class="flexblock-left"><h3 class=" label-med boldtext" id="rollo" attid="OXmIrLklSoLTLvZv">Rollo</h3><input name="data.attributes.rollo.value" value="{{data.attributes.rollo.value}}" type="text" class="input-free rollo" attid="OXmIrLklSoLTLvZv"></div></div></div></div><div class="new-multiblock" id="estados_infomultirow2"><div class="multi-3-4"><div class="new-row"><div class="flexblock-left"><h3 class=" label-medlarge boldtext" id="libreto" attid="KLcp56DlmT04CtnO">Libreto</h3><table class="table-free libreto_tabla" name="data.attributes.libreto_tabla" value="{{data.attributes.libreto_tabla.value}}" attid="Qhsd0JsKWBsRsgCR"><thead style="display: none;"><tr><th class="input-free">Item</th><th class="cell-empty"></th></tr></thead><tbody class="table" id="Qhsd0JsKWBsRsgCR"></tbody></table><h3 class=" label-free" id="dif" attid="B0DEzoiWHHWmp1W1"><div title="Dificultad"><i class="fas fa-dice-d20"></i></div></h3><select class="input-med dif" name="data.attributes.dif.value" attid="B0DEzoiWHHWmp1W1">{{#select data.attributes.dif.value}}<option value="Normal">Normal</option><option value="Ventaja">Ventaja</option><option value="Desventaja">Desventaja</option>{{/select}}</select></div><div class="flexblock-left"><h3 class=" label-free" id="Normal" attid="iOlGcJVuIzBk0Vjc" style="display: none;"></h3><input name="data.attributes.Normal.value" value="{{data.attributes.Normal.value}}" type="text" class="input-free input-disabled Normal" readonly="true" attid="iOlGcJVuIzBk0Vjc" style="display: none;"><h3 class=" label-free" id="Ventaja" attid="XncGEUVgibFUeGgg" style="display: none;"></h3><input name="data.attributes.Ventaja.value" value="{{data.attributes.Ventaja.value}}" type="text" class="input-free input-disabled Ventaja" readonly="true" attid="XncGEUVgibFUeGgg" style="display: none;"><h3 class=" label-free" id="Desventaja" attid="NbIMoB6ad4npGixW" style="display: none;"></h3><input name="data.attributes.Desventaja.value" value="{{data.attributes.Desventaja.value}}" type="text" class="input-free input-disabled Desventaja" readonly="true" attid="NbIMoB6ad4npGixW" style="display: none;"></div><div class="flexblock-left"><h3 class=" label-free" id="formula" attid="y7mrVo0gDhQUiGAd" style="display: none;"></h3><input name="data.attributes.formula.value" value="{{data.attributes.formula.value}}" type="text" class="input-free input-disabled formula" readonly="true" attid="y7mrVo0gDhQUiGAd" style="display: none;"></div></div></div></div></div><div class="col-1-4"><div class="panelheader">PE Y PUNTOS</div><div class="new-row"><div class="flexblock-left"><h3 class=" label-small boldtext" id="puntos" attid="p1FLm1ISdVmarS6W">Puntos</h3><input name="data.attributes.puntos.value" value="{{data.attributes.puntos.value}}" type="text" class="input-min puntos" attid="p1FLm1ISdVmarS6W"></div><div class="flexblock-left"><h3 class=" label-small boldtext rollable" id="especial" attid="8fiFyFrCS03Wv3XG">Especial</h3><input name="data.attributes.especial.value" value="{{data.attributes.especial.value}}" type="text" class="input-min especial" attid="8fiFyFrCS03Wv3XG"></div><div class="flexblock-left"><h3 class=" label-free boldtext" id="pe" attid="9dt4zoqEVybHSY0P">PE</h3><div class="radio-input pe" name="pe" attid="9dt4zoqEVybHSY0P"></div></div></div></div></div><div class="new-block" id="core_tabrow1"><div id="estados_multipanelmulti" class="multi-3-4-col"><div class="panelheader">ESTADOS</div><div class="new-block" id="estados_multipanelmultirow3"><div class="multi-1-4"><div class="new-row"><div class="flexblock-center"><h3 class=" label-free boldtext rollable" id="ira_estado" attid="cCsuCD2UZHizve4G">IRA</h3><input name="data.attributes.ira_estado.value" value="{{data.attributes.ira_estado.value}}" type="text" class="input-min ira_estado" attid="cCsuCD2UZHizve4G"></div><div class="flexblock-center"><div class="radio-input ira_pico" name="ira_pico" attid="VgKDmRIp0bibZi9t"></div></div></div></div><div class="multi-1-4"><div class="new-row"><div class="flexblock-center"><h3 class=" label-free boldtext rollable" id="tristeza_estado" attid="jkVcTXMg3QF789AM">TRISTEZA</h3><input name="data.attributes.tristeza_estado.value" value="{{data.attributes.tristeza_estado.value}}" type="text" class="input-min tristeza_estado" attid="jkVcTXMg3QF789AM"></div><div class="flexblock-center"><div class="radio-input tristeza_pico" name="tristeza_pico" attid="qitM0qLPkyzRuUaD"></div></div></div></div><div class="multi-1-4"><div class="new-row"><div class="flexblock-center"><h3 class=" label-free boldtext rollable" id="miedo_estado" attid="48UZI9zRoBzJoOcY">MIEDO</h3><input name="data.attributes.miedo_estado.value" value="{{data.attributes.miedo_estado.value}}" type="text" class="input-min miedo_estado" attid="48UZI9zRoBzJoOcY"></div><div class="flexblock-center"><div class="radio-input miedo_pico" name="miedo_pico" attid="3JWRmKSIjly1jDqe"></div></div></div></div></div><div class="new-multiblock" id="estados_multipanelmultirow4"><div class="multi-1-4"><div class="new-row"><div class="flexblock-center"><h3 class=" label-free boldtext rollable" id="calma_estado" attid="oZXwTkpW1OQ6isOt">CALMA</h3><input name="data.attributes.calma_estado.value" value="{{data.attributes.calma_estado.value}}" type="text" class="input-min calma_estado" attid="oZXwTkpW1OQ6isOt"></div><div class="flexblock-center"><div class="radio-input calma_pico" name="calma_pico" attid="pPAAu3SntD2RCf2r"></div></div></div></div><div class="multi-1-4"><div class="new-row"><div class="flexblock-center"><h3 class=" label-free boldtext rollable" id="alegria_estado" attid="BvktWP9LPR1JilrO">ALEGRÍA</h3><input name="data.attributes.alegria_estado.value" value="{{data.attributes.alegria_estado.value}}" type="text" class="input-min alegria_estado" attid="BvktWP9LPR1JilrO"></div><div class="flexblock-center"><div class="radio-input alegria_pico" name="alegria_pico" attid="rEg3koDNtFYlvCvr"></div></div></div></div><div class="multi-1-4"><div class="new-row"><div class="flexblock-center"><h3 class=" label-free boldtext rollable" id="pasion_estado" attid="NM936c3PSuR1j02I">PASIÓN</h3><input name="data.attributes.pasion_estado.value" value="{{data.attributes.pasion_estado.value}}" type="text" class="input-min pasion_estado" attid="NM936c3PSuR1j02I"></div><div class="flexblock-center"><div class="radio-input pasion_pico" name="pasion_pico" attid="6mwggZ1x1hQ1p1Gz"></div></div></div></div></div></div><div class="col-1-4"><div class="panelheader">ARMADURA Y DAÑO</div><div class="new-row"><div class="flexblock-left"><h3 class=" label-small boldtext" id="armadura" attid="395Y3evzOsAI3Rc4">Armadura</h3><div class="radio-input armadura" name="armadura" attid="395Y3evzOsAI3Rc4"></div></div><div class="flexblock-left"><h3 class=" label-small" id="leve_dano" attid="QnFp9r3QLDdAm0AH">Leve</h3><div class="radio-input leve_dano" name="leve_dano" attid="QnFp9r3QLDdAm0AH"></div></div><div class="flexblock-left"><h3 class=" label-small" id="moderado_dano" attid="IFwYBgzqGnkEzsxw">Moderado</h3><div class="radio-input moderado_dano" name="moderado_dano" attid="IFwYBgzqGnkEzsxw"></div></div><div class="flexblock-left"><h3 class=" label-small" id="critico_dano" attid="16bNxxgjdvMx2mGY">Crítico</h3><div class="radio-input critico_dano" name="critico_dano" attid="16bNxxgjdvMx2mGY"></div></div></div></div></div><div class="new-block" id="core_tabrow2"><div class="col-1-1"><div class="panelheader">AVANCES</div><div class="new-row"><div class="flexblock-left"><h3 class=" label-free" id="ira_plus" attid="JaRO83BTqJwxCzde">+1 Ira</h3><input class="input-small ira_plus" name="data.attributes.ira_plus.value" type="checkbox" {{checked actor.data.attributes.ira_plus.value}} attid="JaRO83BTqJwxCzde"><h3 class=" label-free" id="calma_plus" attid="I0dVYfK3Wh8tT4Yo">+1 Calma</h3><input class="input-small calma_plus" name="data.attributes.calma_plus.value" type="checkbox" {{checked actor.data.attributes.calma_plus.value}} attid="I0dVYfK3Wh8tT4Yo"><h3 class=" label-free" id="tristeza_plus" attid="gZUCR79zZUdMJojE">+1 Tristeza</h3><input class="input-small tristeza_plus" name="data.attributes.tristeza_plus.value" type="checkbox" {{checked actor.data.attributes.tristeza_plus.value}} attid="gZUCR79zZUdMJojE"><h3 class=" label-free" id="alegria_plus" attid="zDt7Wglt11yEtXDA">+1 Alegría</h3><input class="input-small alegria_plus" name="data.attributes.alegria_plus.value" type="checkbox" {{checked actor.data.attributes.alegria_plus.value}} attid="zDt7Wglt11yEtXDA"><h3 class=" label-free" id="miedo_plus" attid="yEVlJCY3w1CMvJ7r">+1 Miedo</h3><input class="input-small miedo_plus" name="data.attributes.miedo_plus.value" type="checkbox" {{checked actor.data.attributes.miedo_plus.value}} attid="yEVlJCY3w1CMvJ7r"><h3 class=" label-free" id="pasion_plus" attid="eGKtOymnxEVoPac1">+1 Pasión</h3><input class="input-small pasion_plus" name="data.attributes.pasion_plus.value" type="checkbox" {{checked actor.data.attributes.pasion_plus.value}} attid="eGKtOymnxEVoPac1"></div><div class="flexblock-left"><h3 class=" label-free" id="nuevo_movimiento_libreto" attid="kSjieYq7HE5iYdlE">Nuevo movimiento de libreto</h3><div class="radio-input nuevo_movimiento_libreto" name="nuevo_movimiento_libreto" attid="kSjieYq7HE5iYdlE"></div><h3 class=" label-free" id="elimina_obligacion" attid="EZ00Q9H2CMpFDfAv">Elimina una Obligación</h3><div class="radio-input elimina_obligacion" name="elimina_obligacion" attid="EZ00Q9H2CMpFDfAv"></div><h3 class=" label-free" id="nuevo_movimiento_otro" attid="fIUv4Pu20NIlgVwh">Nuevo movimiento de otro libreto</h3><div class="radio-input nuevo_movimiento_otro" name="nuevo_movimiento_otro" attid="fIUv4Pu20NIlgVwh"></div></div></div></div></div><div class="new-block" id="core_tabrow3"><div class="col-1-1"><div class="panelheader-t">A partir del quinto avance, también puedes elegir entre las siguientes opciones:</div><div class="new-row"><div class="flexblock-left"><h3 class=" label-free" id="estado_plus" attid="KyoadkOvKkfYuAJR">Ganas +1 a cualquier estado (máx. +3)</h3><div class="radio-input estado_plus" name="estado_plus" attid="KyoadkOvKkfYuAJR"></div><h3 class=" label-free" id="movimiento_plus" attid="EhSxhnZdgAj1gpmt">Avanza un movimiento básico</h3><div class="radio-input movimiento_plus" name="movimiento_plus" attid="EhSxhnZdgAj1gpmt"></div></div><div class="flexblock-left"><h3 class=" label-free" id="crear_protagonista" attid="wrRyIbL8KaLnLVYp">Crea otro protagonista distinto y juega con él</h3><input class="input-small crear_protagonista" name="data.attributes.crear_protagonista.value" type="checkbox" {{checked actor.data.attributes.crear_protagonista.value}} attid="wrRyIbL8KaLnLVYp"><h3 class=" label-free" id="cambia_libreto" attid="yS05KNHxfpdVD1h6">Cambia a otro libreto</h3><input class="input-small cambia_libreto" name="data.attributes.cambia_libreto.value" type="checkbox" {{checked actor.data.attributes.cambia_libreto.value}} attid="yS05KNHxfpdVD1h6"></div><div class="flexblock-left"><h3 class=" label-free" id="avance_libreto_1" attid="9afKSJZyCa2Dzpal">Avance específico del libreto</h3><div class="radio-input avance_libreto_1" name="avance_libreto_1" attid="9afKSJZyCa2Dzpal"></div><h3 class=" label-free" id="avance_libreto_2" attid="POlXyiWwkN4iDGpq">Avance específico del libreto</h3><div class="radio-input avance_libreto_2" name="avance_libreto_2" attid="POlXyiWwkN4iDGpq"></div></div></div></div></div></div></div><div class="tab scrollable net_tab_tab" id="net_tab_Def" data-group="primary" data-tab="net_tab"><div class="new-column" id="net_tabBody"><div class="new-block" id="net_tabrow3"><div id="cabeceramulti_cybermulti" class="multi-1-1-col"><div class="new-block" id="cabeceramulti_cybermultirow1"><div class="multi-1-2"><div class="table-row"><div class="flexblock-left"><table class="table-free libreto_tabla" name="data.attributes.libreto_tabla" value="{{data.attributes.libreto_tabla.value}}" attid="Qhsd0JsKWBsRsgCR"><thead style="display: none;"><tr><th class="input-free">Item</th><th class="cell-empty"></th></tr></thead><tbody class="table" id="Qhsd0JsKWBsRsgCR"></tbody></table></div></div></div><div class="multi-1-2"><div class="new-row"><div class="flexblock-left"><h3 class="righttext label-medlarge boldtext" id="cred_prop" attid="OEp1wlvQ0k6demDu">Cred</h3><input name="data.attributes.cred_prop.value" value="{{data.attributes.cred_prop.value}}" type="text" class="input-min cred_prop" attid="OEp1wlvQ0k6demDu"></div></div></div></div></div></div><div class="new-block" id="net_tabrow4"><div id="mov_main_panelmulti" class="multi-1-2-col"><div class="panelheader">MOVIMIENTOS</div><div class="new-block" id="mov_main_panelmultirow2"><div class="multi-1-4"><div class="panelheader">Movimientos básicos</div><div class="table-row"><div class="flexblock-center"><table class="table-free mov_basico_prop" name="data.attributes.mov_basico_prop" value="{{data.attributes.mov_basico_prop.value}}" attid="a4peqzoNeRmaAhaR"><thead style="display: none;"><tr><th class="input-free">Item</th><th class="cell-empty"></th></tr></thead><tbody class="table" id="a4peqzoNeRmaAhaR"></tbody></table></div></div></div><div class="multi-1-4"><div class="panelheader">Movimientos de libreto</div><div class="table-row"><div class="flexblock-left"><table class="table-free mov_libreto_prop" name="data.attributes.mov_libreto_prop" value="{{data.attributes.mov_libreto_prop.value}}" attid="UTfZJoCDrOJ9HqvK"><thead style="display: none;"><tr><th class="input-free">Item</th><th class="cell-empty"></th></tr></thead><tbody class="table" id="UTfZJoCDrOJ9HqvK"></tbody></table></div></div></div></div></div><div class="col-1-2"><div class="panelheader">EQUIPO</div><div class="table-row"><div class="flexblock-left"><table class="table-free equipo_tabla" name="data.attributes.equipo_tabla" value="{{data.attributes.equipo_tabla.value}}" attid="ydiFh4lAuwMfkoGt"><thead><tr><th class="input-free">Item</th><th class="input-med">Daño</th><th class="input-med">Etiquetas</th><th class="cell-empty"></th></tr></thead><tbody class="table" id="ydiFh4lAuwMfkoGt"></tbody></table></div></div></div></div><div class="new-block" id="net_tabrow5"><div class="col-1-1"><div class="panelheader">CREENCIAS</div><div class="new-row"><div class="flexblock-left"><input name="data.attributes.creencia_prop.value" value="{{data.attributes.creencia_prop.value}}" type="text" class="input-free creencia_prop" attid="s1ANwX60RS6HURBy"></div><div class="flexblock-left"><input name="data.attributes.creencia_prop_2.value" value="{{data.attributes.creencia_prop_2.value}}" type="text" class="input-free creencia_prop_2" attid="UEAHu7zjwOmrICNo"></div><div class="flexblock-left"><input name="data.attributes.creencia_prop_3.value" value="{{data.attributes.creencia_prop_3.value}}" type="text" class="input-free creencia_prop_3" attid="H0awpvLjVLuhQDM7"></div></div></div></div><div class="new-block" id="net_tabrow6"><div class="col-1-1"><div class="panelheader">OBLIGACIONES</div><div class="new-row"><div class="flexblock-left"><textarea class="texteditor-large obligacion" name="data.attributes.obligacion.value" attid="s0wVzKonLTBIOxqz">{{data.attributes.obligacion.value}}</textarea></div></div></div></div></div></div></section>
+</form>

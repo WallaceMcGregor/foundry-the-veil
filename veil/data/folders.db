@@ -1,0 +1,30 @@
+{"_id":"26lmJh6VdHBWHFhi","name":"Partida","type":"Item","sort":2700000,"flags":{},"parent":null,"color":""}
+{"_id":"3pF59RmTSlRwTcp8","name":"PE y Puntos","type":"Item","sort":700000,"flags":{},"parent":"JCmPKrNIB1vtTtec","color":"#0080ff"}
+{"name":"_CONFIG","type":"Actor","sort":null,"flags":{},"parent":null,"color":"","_id":"61mUTtGugJb3BBrT"}
+{"name":"Creencias","type":"Item","sort":2000000,"flags":{},"parent":"JCmPKrNIB1vtTtec","color":"#0080ff","_id":"8O6wKkaNwpVnHaKH"}
+{"name":"Etiquetas","type":"Item","sort":2300000,"flags":{},"parent":"SgdM8V6hoJjZMuFm","color":"#ff8080","_id":"BogXM3piXwvJ1iN2"}
+{"_id":"HCgtJsbjtb2cibrV","name":"Avances superiores","type":"Item","sort":950000,"flags":{},"parent":"JCmPKrNIB1vtTtec","color":"#0080ff"}
+{"_id":"JCmPKrNIB1vtTtec","name":"Properties","type":"Item","sort":500000,"flags":{},"parent":"dFWuIIW4MyjF6zPE","color":"#004080"}
+{"name":"Partida","type":"Actor","sort":100000,"flags":{},"parent":null,"color":"","_id":"Kox0EUWHDJSJuzHj"}
+{"_id":"Kta0HctCd6M9XPHM","name":"Info panel","type":"Item","sort":600000,"flags":{},"parent":"JCmPKrNIB1vtTtec","color":"#0080ff"}
+{"name":"Propiedades","type":"Item","sort":1200000,"flags":{},"parent":"VqHMh5ghIUdvxlq1","color":"#ff0000","_id":"LbcdijyjXM6r6P9y"}
+{"name":"Movimientos básicos","type":"Item","sort":1900000,"flags":{},"parent":"SgdM8V6hoJjZMuFm","color":"#ff8080","_id":"LgG6RTZwUzpJy3zt"}
+{"name":"Grupos","type":"Item","sort":1100000,"flags":{},"parent":"VqHMh5ghIUdvxlq1","color":"#ff0000","_id":"M5sntzusNxlY6KfL"}
+{"_id":"MARCqtVyMHXrQSXr","name":"Estados","type":"Item","sort":100000,"flags":{},"parent":"uwBeQU52242xZHRc","color":"#0080ff"}
+{"_id":"MRv7dfb0l9S5P5WL","name":"Net","type":"Item","sort":1700000,"flags":{},"parent":"uwBeQU52242xZHRc","color":"#0080ff"}
+{"name":"Equipo","type":"Item","sort":2200000,"flags":{},"parent":"SgdM8V6hoJjZMuFm","color":"#ff8080","_id":"MqA6F8sHC3Uc0ZOF"}
+{"name":"core","type":"Item","sort":1600000,"flags":{},"parent":"uwBeQU52242xZHRc","color":"#0080ff","_id":"PK74thNzG8GGjNcK"}
+{"name":"Dificultad","type":"Item","sort":2600000,"flags":{},"parent":"JCmPKrNIB1vtTtec","color":"#0080ff","_id":"PfDtxrFtyU32Imn6"}
+{"name":"cItems","type":"Item","sort":1300000,"flags":{},"parent":"VqHMh5ghIUdvxlq1","color":"#ff0000","_id":"SgdM8V6hoJjZMuFm"}
+{"_id":"TJVNnQAEO0Bu8ctz","name":"Equipo","type":"Item","sort":2100000,"flags":{},"parent":"JCmPKrNIB1vtTtec","color":"#0080ff"}
+{"_id":"VqHMh5ghIUdvxlq1","name":"_Compendio","type":"Item","sort":300000,"flags":{},"parent":null,"color":"#800000"}
+{"_id":"WT0bCzpGOFcStO7q","name":"Tabs","type":"Item","sort":100000,"flags":{},"parent":"dFWuIIW4MyjF6zPE","color":"#004080"}
+{"_id":"aGVd95QHM1Blg5rK","name":"Avances","type":"Item","sort":850000,"flags":{},"parent":"JCmPKrNIB1vtTtec","color":"#0080ff"}
+{"name":"Movimientos de libreto","type":"Item","sort":1500000,"flags":{},"parent":"SgdM8V6hoJjZMuFm","color":"#ff8080","_id":"b3gAdjcf8DLO5zYk"}
+{"_id":"dFWuIIW4MyjF6zPE","name":"_Plantilla","type":"Item","sort":200000,"flags":{},"parent":null,"color":"#000080"}
+{"name":"Libretos","type":"Item","sort":1400000,"flags":{},"parent":"SgdM8V6hoJjZMuFm","color":"#ff8080","_id":"dgSmdIDCIFuTnigl"}
+{"_id":"j9SZDkCDF1ykE95l","name":"Estados","type":"Item","sort":825000,"flags":{},"parent":"JCmPKrNIB1vtTtec","color":"#0080ff"}
+{"name":"Obligaciones","type":"Item","sort":2400000,"flags":{},"parent":"JCmPKrNIB1vtTtec","color":"#0080ff","_id":"k0fajWvB81hCuKtE"}
+{"_id":"rsGOKbWhduKpVDFW","name":"Armadura y Daño","type":"Item","sort":800000,"flags":{},"parent":"JCmPKrNIB1vtTtec","color":"#0080ff"}
+{"name":"Movimientos","type":"Item","sort":1800000,"flags":{},"parent":"JCmPKrNIB1vtTtec","color":"#0080ff","_id":"uIJscitSwWlKUD8t"}
+{"_id":"uwBeQU52242xZHRc","name":"Paneles","type":"Item","sort":400000,"flags":{},"parent":"dFWuIIW4MyjF6zPE","color":"#004080"}

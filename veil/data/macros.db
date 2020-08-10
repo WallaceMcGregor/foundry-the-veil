@@ -1,0 +1,1 @@
+{"_id":"EHHHeUeva4aTytHv","name":"New Macro","permission":{"default":0,"HAN6sJ5S6l9GIHA6":3},"type":"script","sort":100001,"flags":{},"scope":"global","command":"rollexp.replace(\"2d6\",\"3d6kh\");","author":"HAN6sJ5S6l9GIHA6","img":"icons/svg/dice-target.svg","actorIds":[]}
