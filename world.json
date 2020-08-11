@@ -16,7 +16,6 @@
       "path": "packs/movimientos-de-libreto.db",
       "system": "sandbox",
       "package": "world",
-      "absPath": "F:\\Rol\\Foundry\\Data\\worlds\\veil\\packs\\movimientos-de-libreto.db"
     },
     {
       "label": "Movimientos básicos",
@@ -25,7 +24,6 @@
       "path": "packs/movimientos-basicos.db",
       "system": "sandbox",
       "package": "world",
-      "absPath": "F:\\Rol\\Foundry\\Data\\worlds\\veil\\packs\\movimientos-basicos.db"
     },
     {
       "label": "Etiquetas",
@@ -34,7 +32,6 @@
       "path": "packs/etiquetas.db",
       "system": "sandbox",
       "package": "world",
-      "absPath": "F:\\Rol\\Foundry\\Data\\worlds\\veil\\packs\\etiquetas.db"
     },
     {
       "label": "Equipo",
@@ -43,7 +40,6 @@
       "path": "packs/equipo.db",
       "system": "sandbox",
       "package": "world",
-      "absPath": "F:\\Rol\\Foundry\\Data\\worlds\\veil\\packs\\equipo.db"
     },
     {
       "label": "Libretos",
@@ -52,7 +48,6 @@
       "path": "packs/libretos.db",
       "system": "sandbox",
       "package": "world",
-      "absPath": "F:\\Rol\\Foundry\\Data\\worlds\\veil\\packs\\libretos.db"
     }
   ],
   "languages": [
@@ -63,9 +58,9 @@
   ],
   "keywords": [],
   "socket": false,
-  "url": "",
-  "manifest": "",
-  "download": "",
+  "url": "https://github.com/WallaceMcGregor/foundry-the-veil",
+  "manifest": "https://raw.githubusercontent.com/WallaceMcGregor/foundry-the-veil/master/world.json",
+  "download": "https://codeload.github.com/WallaceMcGregor/foundry-the-veil/zip/master",
   "license": "",
   "readme": "",
   "bugs": "",
