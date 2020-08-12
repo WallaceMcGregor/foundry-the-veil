@@ -15,7 +15,7 @@
       "name": "movimientos-de-libreto",
       "path": "packs/movimientos-de-libreto.db",
       "system": "sandbox",
-      "package": "world",
+      "package": "world"
     },
     {
       "label": "Movimientos básicos",
@@ -23,7 +23,7 @@
       "name": "movimientos-basicos",
       "path": "packs/movimientos-basicos.db",
       "system": "sandbox",
-      "package": "world",
+      "package": "world"
     },
     {
       "label": "Etiquetas",
@@ -31,7 +31,7 @@
       "name": "etiquetas",
       "path": "packs/etiquetas.db",
       "system": "sandbox",
-      "package": "world",
+      "package": "world"
     },
     {
       "label": "Equipo",
@@ -39,7 +39,7 @@
       "name": "equipo",
       "path": "packs/equipo.db",
       "system": "sandbox",
-      "package": "world",
+      "package": "world"
     },
     {
       "label": "Libretos",
@@ -47,7 +47,7 @@
       "name": "libretos",
       "path": "packs/libretos.db",
       "system": "sandbox",
-      "package": "world",
+      "package": "world"
     }
   ],
   "languages": [
