@@ -62,6 +62,7 @@ input[type="text"] {
 .sandbox.sheet .panelheader {
   background-color: #c10000;
   font-family: 'Oswald', sans-serif;
+  font-size: 13px;
 }
 
 .sandbox.sheet input[type=text] {
@@ -181,4 +182,12 @@ button, .window-app.image-popout .form-group button {
 
 .sidebar-tab .directory-list .directory-item h3, .sidebar-tab .directory-list .directory-item h4 {
   color: black;
+}
+
+.entity-name a {
+  color: white;
+}
+
+.sandbox.sheet .texteditor-large {
+  font-family: "Signika", sans-serif;
 }
