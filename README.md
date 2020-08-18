@@ -6,13 +6,18 @@ Para utilizar este sistema necesitas el sistema [Sandbox](https://gitlab.com/rol
 
 También tienes el enlace al [manifest](https://raw.githubusercontent.com/WallaceMcGregor/foundry-the-veil/master/world.json).
 
-En el interior encontrarás una ayuda titulada **Créditos y Ajustes** en la que se explica el funcionamiento y particularidades de la ficha.
+En el interior encontrarás una ayuda titulada **Créditos y Ajustes #versión** en la que se explica el funcionamiento y particularidades de la ficha.
 
 ## Planes futuros
 
 - [x] Lanzamiento inicial
-- [ ] Comprobación de errores
-- [ ] Diseño personalizado
+- [x] Diseño personalizado
+- [ ] Sustitución de enlaces cItem por elementos del Compendio.
 - [ ] Incorporar los elementos de Cascade
+- [ ] Comprobación de errores
 
 Siéntete libre de comunicar los errores y sugerencias para retocar la ficha.
+
+## Actualización 1.1
+
+Se han añadido estilos personalizados a la ficha. Para activarlos, solo tienes que seleccionar el archivo "worlds/veil/styles/veil.css" en los **Ajustes del Sistema**.
