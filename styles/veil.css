@@ -180,14 +180,14 @@ button, .window-app.image-popout .form-group button {
   background: transparent;
 }
 
-.sidebar-tab .directory-list .directory-item h3, .sidebar-tab .directory-list .directory-item h4 {
+.sandbox.sheet .texteditor-large {
+  font-family: "Signika", sans-serif;
+}
+
+h4.entry-name {
   color: black;
 }
 
-.entity-name a {
-  color: white;
-}
-
-.sandbox.sheet .texteditor-large {
-  font-family: "Signika", sans-serif;
+h4.entry-name a:hover {
+  text-shadow: 0 0 8px black;
 }
