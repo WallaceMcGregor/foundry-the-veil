@@ -1,0 +1,180 @@
+h1, h2, h3, h4 {
+  font-family: 'Oswald', sans-serif;
+  color: #c10000;
+}
+
+h1 {
+  border-bottom: 2px solid #c10000;
+}
+
+h2 {
+  border-bottom: 1px solid #c10000;
+}
+
+a:hover {
+  text-shadow: 0 0 8px white;
+}
+
+.app {
+  color: #ffffff;
+  border-radius: 0px;
+}
+
+input[type="text"] {
+  border: 1px solid #c10000;
+  border-radius: 0px;
+  color: black;
+}
+
+#sidebar {
+  border: 1px  #c10000;
+}
+
+#sidebar-tabs > .item.active {
+  box-shadow: 0 0 6px inset #c10000;
+}
+
+#sidebar-tabs {
+  border-bottom: 1px solid #c10000;
+  box-shadow: 0 0 10px #c10000;
+}
+
+#sidebar-tabs > .item {
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c10000;
+  border: 1px solid #ffffff;
+}
+
+.window-app .window-content  {
+  background-color: white;
+  background: white;
+  background-clip: border-box;
+}
+
+.sandbox.sheet .atabs {
+  border-bottom: 2px solid #c10000;
+  color: #c10000;
+}
+
+.sandbox.sheet .panelheader {
+  background-color: #c10000;
+  font-family: 'Oswald', sans-serif;
+}
+
+.sandbox.sheet input[type=text] {
+  border: 1px solid #c10000;
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.sandbox.sheet .input-med {
+  border: 1px solid #c10000;
+  border-radius: 0px;
+}
+
+.sandbox.sheet .linkable:hover {
+  color: #c10000;
+  font-weight: bold;
+}
+
+.sandbox.sheet th.input-med {
+  border: 0px;
+  color: white;
+}
+
+.sandbox.sheet .panelheader-t {
+  color: #c10000;
+  text-shadow: 0px;
+}
+
+.table {
+  color: #c10000;
+}
+
+.label-med, .label-medlarge, .label-free, .label-small, .radio-input, .input-med {
+  color: #c10000;
+}
+
+.linkable:hover {
+  color: darkred;
+  font-weight: bold;
+}
+
+a.entity-link {
+  background: #c10000;
+  border: 1px solid black;
+  color: white;
+}
+
+a.entity-link i {
+  color: white;
+}
+
+.ci-delete:hover {
+  text-shadow: 0 0 8px #c10000;
+}
+
+#chat-log .message, .roll-menu {
+  background: white;
+  border: 2px solid #c10000;
+  border-radius: 0;
+}
+
+.roll-flavor, .roll-conditional {
+  color: #c10000;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.roll-sender-name {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+.roll-user, .roll-main-button, .roll-detail-button {
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  color: #c10000;
+  font-style: normal;
+}
+
+button, .window-app.image-popout .form-group button {
+  background: white;
+  border: 1px solid #c10000;
+  border-radius: 0px;
+  color: #c10000;
+  font-family: 'Oswald', sans-serif;
+}
+
+.sidebar-tab h4, #combat #combat-round .encounters h3, #players h3, #scenes .scene h3, #compendium h3,
+.window-app .window-header .window-title {
+    color: white;
+}
+
+.sidebar-tab h2 {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.sidebar-tab .directory-header .header-search input,
+#chat-controls div.roll-type-select select, #chat-form textarea,
+.window-app.image-popout .form-group.title input,
+.window-app.image-popout .form-group.picker input {
+  background: white;
+}
+
+.sandbox.sheet th.input-free, .sandbox.sheet th.input-med, .sandbox.sheet th.cell-empty {
+  background: #c10000;
+}
+
+.sandbox.sheet .table-row {
+  border-bottom: 1px solid transparent;
+}
+
+.sandbox.sheet table.table-free {
+  background: transparent;
+}

@@ -10,14 +10,11 @@ En el interior encontrarás una ayuda titulada **Créditos y Ajustes #versión**
 
 ## Planes futuros
 
-- [x] Lanzamiento inicial
-- [x] Diseño personalizado
+- [x] Lanzamiento inicial.
+- [x] Diseño personalizado.
 - [ ] Sustitución de enlaces cItem por elementos del Compendio.
-- [ ] Incorporar los elementos de Cascade
-- [ ] Comprobación de errores
+- [ ] Incorporar los elementos de Cascade.
+- [ ] Diseño personalizado para Cascade.
+- [ ] Comprobación de errores.
 
 Siéntete libre de comunicar los errores y sugerencias para retocar la ficha.
-
-## Actualización 1.1
-
-Se han añadido estilos personalizados a la ficha. Para activarlos, solo tienes que seleccionar el archivo "worlds/veil/styles/veil.css" en los **Ajustes del Sistema**.
