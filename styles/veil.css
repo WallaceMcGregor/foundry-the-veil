@@ -178,3 +178,7 @@ button, .window-app.image-popout .form-group button {
 .sandbox.sheet table.table-free {
   background: transparent;
 }
+
+.sidebar-tab .directory-list .directory-item h3, .sidebar-tab .directory-list .directory-item h4 {
+  color: black;
+}
