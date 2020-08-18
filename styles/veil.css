@@ -143,6 +143,10 @@ a.entity-link i {
   font-style: normal;
 }
 
+.roll-flexrow .roll-sender-name {
+  color: #c10000;
+}
+
 button, .window-app.image-popout .form-group button {
   background: white;
   border: 1px solid #c10000;
