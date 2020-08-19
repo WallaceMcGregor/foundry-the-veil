@@ -6,7 +6,9 @@ Para utilizar este sistema necesitas el sistema [Sandbox](https://gitlab.com/rol
 
 También tienes el enlace al [manifest](https://raw.githubusercontent.com/WallaceMcGregor/foundry-the-veil/master/world.json) que puedes utilizar en **Instalar Mundo**.
 
-En el interior encontrarás una ayuda titulada **Créditos y Ajustes #versión** en la que se explica el funcionamiento y particularidades de la ficha.
+En el interior encontrarás una ayuda titulada **Créditos y Ajustes X.X** en la que se explica el funcionamiento y particularidades de la ficha.
+
+![Captura de pantalla](https://i.imgur.com/EXsO7VJ.png)
 
 ## Planes futuros
 
