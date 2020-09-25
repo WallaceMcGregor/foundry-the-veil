@@ -1,3 +1,11 @@
+.sandbox.sheet table {
+  width:-webkit-fill-available;
+}
+
+.sandbox.sheet table.table-free {
+  width:-webkit-fill-available;
+}
+
 h1, h2, h3, h4 {
   font-family: 'Oswald', sans-serif;
   color: #c10000;
@@ -41,6 +49,10 @@ input[type="text"] {
 
 #sidebar-tabs > .item {
   border-radius: 0;
+}
+
+#chat-log .message .message-header .message-sender {
+  color: #c10000;
 }
 
 ::-webkit-scrollbar-thumb {
