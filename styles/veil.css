@@ -103,6 +103,11 @@ input[type="text"] {
   text-shadow: 0px;
 }
 
+.sandbox.sheet th {
+  background-color: #c10000;
+  color: white;
+}
+
 .table {
   color: #c10000;
 }
