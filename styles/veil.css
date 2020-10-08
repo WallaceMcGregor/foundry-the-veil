@@ -156,12 +156,24 @@ a.entity-link i {
 .roll-user, .roll-main-button, .roll-detail-button {
   font-family: 'Oswald', sans-serif;
   font-size: 12px;
-  color: #c10000;
+  color:black;
   font-style: normal;
 }
 
 .roll-flexrow .roll-sender-name {
   color: #c10000;
+}
+
+.roll-iscrit, .roll-result, .roll-isfumble {
+  color: black;
+}
+
+.roll-sender-image {
+  border: 1px solid #c10000;
+}
+
+.roll-underline {
+  border-color: black;
 }
 
 button, .window-app.image-popout .form-group button {

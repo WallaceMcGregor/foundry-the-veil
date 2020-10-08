@@ -8,15 +8,16 @@ También tienes el enlace al [manifest](https://raw.githubusercontent.com/Wallac
 
 En el interior encontrarás una ayuda titulada **Créditos y Ajustes X.X** en la que se explica el funcionamiento y particularidades de la ficha.
 
-![Captura de pantalla](https://i.imgur.com/EXsO7VJ.png)
+![Captura de pantalla](https://i.imgur.com/iDHU504.png)
 
 ## Planes futuros
 
 - [x] Lanzamiento inicial.
 - [x] Diseño personalizado.
-- [ ] Sustitución de enlaces cItem por elementos del Compendio.
 - [ ] Incorporar los elementos de Cascade.
 - [ ] Diseño personalizado para Cascade.
 - [ ] Comprobación de errores.
 
 Siéntete libre de comunicar los errores y sugerencias para retocar la ficha.
+
+<a href='https://ko-fi.com/wallacemcgregor666' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi2.png?v=2' border='0' alt='¡Apóyame en Ko-Fi!' /></a>
