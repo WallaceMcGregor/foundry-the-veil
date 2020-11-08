@@ -24,7 +24,7 @@ Siéntete libre de comunicar los errores y sugerencias para retocar la ficha.
 
 <a href='https://ko-fi.com/wallacemcgregor666' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi2.png?v=2' border='0' alt='¡Apóyame en Ko-Fi!' /></a>
 
-[foundry-shield-066]: https://img.shields.io/badge/Foundry-v0.6.6-informational
+[foundry-shield-066]: https://img.shields.io/badge/Foundry-0.6.6-informational
 [sandbox-shield-039]: https://img.shields.io/badge/Sandbox-0.3.9-informational
 [sandbox-url]: https://gitlab.com/rolnl/sandbox-system-builder/-/tree/master
 [foundry-url]: https://foundryvtt.com/
