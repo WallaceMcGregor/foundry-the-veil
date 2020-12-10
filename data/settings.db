@@ -7,3 +7,5 @@
 {"key":"sandbox.customStyle","value":"\"worlds/veil/styles/veil.css\"","_id":"li4vxNfrgB7bnPno"}
 {"_id":"okkggx77usQyHiDl","key":"core.compendiumConfiguration","value":"{\"world.equipo\":{\"private\":false,\"locked\":true},\"world.etiquetas\":{\"private\":false,\"locked\":true},\"world.libretos\":{\"private\":false,\"locked\":true},\"world.movimientos-basicos\":{\"private\":false,\"locked\":true},\"world.movimientos-de-libreto\":{\"private\":false,\"locked\":true}}"}
 {"_id":"xgfvUseCVz8thBC7","key":"sandbox.showADV","value":"false"}
+{"key":"core.time","value":"0","_id":"XVEbTIz5ByqtgNgb"}
+{"_id":"S8vv33UrSufFuSis","key":"core.moduleConfiguration","value":"{}"}
