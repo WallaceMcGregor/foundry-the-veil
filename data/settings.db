@@ -7,5 +7,5 @@
 {"_id":"Vu8nq2CYsFcTWLHu","key":"cursor-hider.minimumPermission","value":"\"1\""}
 {"key":"core.time","value":"0","_id":"XVEbTIz5ByqtgNgb"}
 {"key":"sandbox.customStyle","value":"\"worlds/veil/styles/veil.css\"","_id":"li4vxNfrgB7bnPno"}
-{"_id":"okkggx77usQyHiDl","key":"core.compendiumConfiguration","value":"{\"world.equipo\":{\"private\":false,\"locked\":true},\"world.etiquetas\":{\"private\":false,\"locked\":true},\"world.libretos\":{\"private\":false,\"locked\":true},\"world.movimientos-basicos\":{\"private\":false,\"locked\":true},\"world.movimientos-de-libreto\":{\"private\":false,\"locked\":true}}"}
+{"_id":"okkggx77usQyHiDl","key":"core.compendiumConfiguration","value":"{\"world.equipo\":{\"private\":false,\"locked\":false},\"world.etiquetas\":{\"private\":false,\"locked\":false},\"world.libretos\":{\"private\":false,\"locked\":false},\"world.movimientos-basicos\":{\"private\":false,\"locked\":false},\"world.movimientos-de-libreto\":{\"private\":false,\"locked\":false}}"}
 {"_id":"xgfvUseCVz8thBC7","key":"sandbox.showADV","value":"false"}

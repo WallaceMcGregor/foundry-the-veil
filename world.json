@@ -1,55 +1,14 @@
 {
   "name": "veil",
   "title": "The Veil",
-  "description": "<p style=\"text-align: center;\"><strong>Podr&aacute;s encontrar una peque&ntilde;a gu&iacute;a de uso en el Apunte \"</strong><strong>Cr&eacute;ditos y Ajustes\" </strong><strong>que he creado.</strong></p>",
-  "version": "1.1.7",
+  "description": "<p style=\"text-align:center\"><strong>Podrás encontrar una pequeña guía de uso en el Apunte \"</strong><strong>Créditos y Ajustes\" </strong><strong>que he creado.</strong></p>",
+  "version": "1.1.8",
   "minimumCoreVersion": "0.0.0",
   "compatibleCoreVersion": "1.0.0",
   "scripts": [],
   "esmodules": [],
   "styles": [],
-  "packs": [
-    {
-      "label": "Movimientos de libreto",
-      "entity": "Item",
-      "name": "movimientos-de-libreto",
-      "path": "packs/movimientos-de-libreto.db",
-      "system": "sandbox",
-      "package": "world"
-    },
-    {
-      "label": "Movimientos básicos",
-      "entity": "Item",
-      "name": "movimientos-basicos",
-      "path": "packs/movimientos-basicos.db",
-      "system": "sandbox",
-      "package": "world"
-    },
-    {
-      "label": "Etiquetas",
-      "entity": "Item",
-      "name": "etiquetas",
-      "path": "packs/etiquetas.db",
-      "system": "sandbox",
-      "package": "world"
-    },
-    {
-      "label": "Equipo",
-      "entity": "Item",
-      "name": "equipo",
-      "path": "packs/equipo.db",
-      "system": "sandbox",
-      "package": "world"
-    },
-    {
-      "label": "Libretos",
-      "entity": "Item",
-      "name": "libretos",
-      "path": "packs/libretos.db",
-      "system": "sandbox",
-      "package": "world"
-    }
-  ],
+  "packs": [],
   "languages": [
     "spanish"
   ],
@@ -67,8 +26,8 @@
   "changelog": "",
   "background": "worlds/veil/imagenes/The%20Veil%20Portada.jpg",
   "system": "sandbox",
-  "coreVersion": "0.7.8",
-  "systemVersion": "0.6.2",
+  "coreVersion": "0.7.9",
+  "systemVersion": "0.6.9",
   "nextSession": "1970-01-01T00:00:00.000Z",
   "availability": 0,
   "unavailable": false,
