@@ -10,10 +10,15 @@
   "styles": [],
   "packs": [],
   "languages": [
-    "spanish"
+    {
+      "lang": "es",
+      "name": "Spanish"
+    }
   ],
   "authors": [
-    "WallaceMcGregor"
+    {
+      "author": "WallaceMcGregor"
+    }
   ],
   "keywords": [],
   "socket": false,
