@@ -1,40 +1,25 @@
 {
   "name": "veil",
   "title": "The Veil",
-  "description": "<p style=\"text-align:center\"><strong>Podrás encontrar una pequeña guía de uso en el Apunte \"</strong><strong>Créditos y Ajustes\" </strong><strong>que he creado.</strong></p>",
-  "version": "1.1.8",
-  "minimumCoreVersion": "0.0.0",
-  "compatibleCoreVersion": "1.0.0",
+  "description": "<p style=\"text-align: center;\">Podr&aacute;s encontrar una peque&ntilde;a gu&iacute;a de uso en el Diario <strong>Cr&eacute;ditos y Ajustes X.X.X</strong> que he creado.</p>",
+  "authors": ["WallaceMcGregor"],
+  "flags": {},
+  "version": "1.2.0",
   "scripts": [],
   "esmodules": [],
   "styles": [],
+  "languages": [],
   "packs": [],
-  "languages": [
-    {
-      "lang": "es",
-      "name": "Spanish"
-    }
-  ],
-  "authors": [
-    {
-      "author": "WallaceMcGregor"
-    }
-  ],
-  "keywords": [],
-  "socket": false,
+  "system": "sandbox",
   "url": "https://github.com/WallaceMcGregor/foundry-the-veil",
   "manifest": "https://raw.githubusercontent.com/WallaceMcGregor/foundry-the-veil/master/world.json",
   "download": "https://codeload.github.com/WallaceMcGregor/foundry-the-veil/zip/master",
-  "license": "",
-  "readme": "",
-  "bugs": "",
-  "changelog": "",
+  "dependencies": [],
+  "socket": false,
+  "protected": false,
   "background": "worlds/veil/imagenes/The%20Veil%20Portada.jpg",
-  "system": "sandbox",
-  "coreVersion": "0.7.9",
-  "systemVersion": "0.7.6",
-  "nextSession": "1970-01-01T00:00:00.000Z",
-  "availability": 0,
-  "unavailable": false,
-  "id": "veil"
+  "coreVersion": "0.8.8",
+  "nextSession": null,
+  "resetKeys": false,
+  "safeMode": false
 }
