@@ -1,8 +1,10 @@
 {
   "name": "veil",
   "title": "The Veil",
-  "description": "<p style=\"text-align: center;\">Podr&aacute;s encontrar una peque&ntilde;a gu&iacute;a de uso en el Diario <strong>Cr&eacute;ditos y Ajustes X.X.X</strong> que he creado.</p>",
+  "description": "<p style=\"text-align:center\">Podrás encontrar una pequeña guía de uso en el Diario <strong>Créditos y Ajustes X.X.X</strong> que he creado.</p>",
   "author": "WallaceMcGregor",
+  "authors": [],
+  "url": "https://github.com/WallaceMcGregor/foundry-the-veil",
   "flags": {},
   "version": "1.3.0",
   "scripts": [],
@@ -11,15 +13,19 @@
   "languages": [],
   "packs": [],
   "system": "sandbox",
-  "url": "https://github.com/WallaceMcGregor/foundry-the-veil",
-  "manifest": "https://raw.githubusercontent.com/WallaceMcGregor/foundry-the-veil/master/world.json",
-  "download": "https://codeload.github.com/WallaceMcGregor/foundry-the-veil/zip/master",
   "dependencies": [],
   "socket": false,
+  "manifest": "https://raw.githubusercontent.com/WallaceMcGregor/foundry-the-veil/master/world.json",
+  "download": "https://codeload.github.com/WallaceMcGregor/foundry-the-veil/zip/master",
   "protected": false,
   "background": "worlds/veil/imagenes/The%20Veil%20Portada.jpg",
-  "coreVersion": "0.8.8",
-  "nextSession": null,
+  "coreVersion": "0.8.9",
   "resetKeys": false,
+<<<<<<< Updated upstream
   "safeMode": false
 }
+=======
+  "safeMode": false,
+  "systemVersion": "0.10.1"
+}
+>>>>>>> Stashed changes
