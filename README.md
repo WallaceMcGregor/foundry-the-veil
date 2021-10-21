@@ -8,7 +8,7 @@ Para utilizar este sistema necesitas el sistema [Sandbox](https://gitlab.com/rol
 
 También tienes el enlace al [manifest](https://raw.githubusercontent.com/WallaceMcGregor/foundry-the-veil/master/world.json) que puedes utilizar en **Instalar Mundo**.
 
-En el interior encontrarás una ayuda titulada **Créditos y Ajustes X.X** en la que se explica el funcionamiento y particularidades de la ficha.
+En el interior encontrarás una ayuda titulada **Créditos y Ajustes X.X.X** en la que se explica el funcionamiento y particularidades de la ficha.
 
 ![Captura de pantalla](https://i.imgur.com/iDHU504.png)
 
@@ -24,7 +24,7 @@ Siéntete libre de comunicar los errores y sugerencias para retocar la ficha.
 
 <a href='https://ko-fi.com/wallacemcgregor666' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi2.png?v=2' border='0' alt='¡Apóyame en Ko-Fi!' /></a>
 
-[foundry-shield-078]: https://img.shields.io/badge/Foundry-0.8.8-informational
-[sandbox-shield-061]: https://img.shields.io/badge/Sandbox-0.9.12-informational
+[foundry-shield-078]: https://img.shields.io/badge/Foundry-0.8.9-informational
+[sandbox-shield-061]: https://img.shields.io/badge/Sandbox-0.10.1-informational
 [sandbox-url]: https://gitlab.com/rolnl/sandbox-system-builder/-/tree/master
 [foundry-url]: https://foundryvtt.com/
