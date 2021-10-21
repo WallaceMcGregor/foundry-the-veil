@@ -21,11 +21,6 @@
   "background": "worlds/veil/imagenes/The%20Veil%20Portada.jpg",
   "coreVersion": "0.8.9",
   "resetKeys": false,
-<<<<<<< Updated upstream
-  "safeMode": false
-}
-=======
   "safeMode": false,
   "systemVersion": "0.10.1"
 }
->>>>>>> Stashed changes
